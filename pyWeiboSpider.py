@@ -4,6 +4,8 @@ import urllib
 
 # 设置Headers
 
+#test login weibo
+
 url = 'http://www.server.com/login'
 user_agent= 'Mozilla/4.0(compatible;MSIE 5.5;Windows NT)'
 values={'username':'zzz',
