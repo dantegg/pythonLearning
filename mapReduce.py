@@ -1,4 +1,4 @@
-#!/usr/bin/env pthon3
+ #!/usr/bin/env pthon3
 # -*- coding: utf-8 -*-
 
 def normalize(name):
