@@ -14,3 +14,14 @@ def external_val():
 info = "hello world"
 external_val()
 print(info)
+
+class Bird(object):
+    feather = True
+    reproduction = "egg"
+    def chirp(self, sound):
+        print(sound)
+
+
+summer = Bird()
+print(summer.reproduction)
+summer.chirp("jijiji")
