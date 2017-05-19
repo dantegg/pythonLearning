@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import functools
+import functools_learn
 
 
 def now():
@@ -47,7 +47,7 @@ print(newNow2.__name__)
 
 
 def final_log(func):
-    @functools.wraps(func)
+    @functools_learn.wraps(func)
     def wrapper(*args, **kw):
         print('call %s():' % func.__name__)
         return func(*args, **kw)
@@ -56,7 +56,7 @@ def final_log(func):
 
 def final_log2(text):
     def decorator(func):
-        @functools.wraps(func)
+        @functools_learn.wraps(func)
         def wrapper(*args, **kw):
             print('%s %s():' % (text, func.__name__))
             return  func(*args, **kw)

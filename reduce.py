@@ -1,4 +1,4 @@
-from functools import reduce
+from functools_learn import reduce
 
 def add(x,y):
     return x + y

@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 import functools
 
+# 不能用functools这种内置模块作为文件名！！！！
+
 int2 = functools.partial(int, base=2)
 
 print(int2('1000000'))
