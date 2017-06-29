@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+from classLearning import Student
+from classAnimal import Animal
+
+kitty = Animal()
+
+a = Student('tom', 99)
+print(a.name)
+print(a.score)
 
 print(type(123))
 print(type('string'))
