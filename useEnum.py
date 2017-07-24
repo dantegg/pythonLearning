@@ -20,4 +20,4 @@ day1 = Weekday.Mon
 print(day1)
 print(Weekday.Tue)
 print(Weekday(1))
-print(day1 === Weekday(1))
+print(day1 == Weekday(1))
