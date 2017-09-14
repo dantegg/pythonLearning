@@ -26,8 +26,8 @@ resp, mails, octets = server.list()
 print(mails)
 
 # 获取最新一份邮件，注意索引号从1开始
-index = len(mails)
-resp, line, octests = server.retr(index)
+index = len(mails) `
+resp, line, octets = server.retr(index)
 
 #lines存储了邮件的原始文本的每一行
 # 可以获取整个邮件的原始文本
