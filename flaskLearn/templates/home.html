@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    home
+     <div>
+         <div>hahah</div>
+        <button onclick="logOut()">退出</button>
+     </div>
+     <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+     <script>
+         function logOut(){
+             $.ajax({
+                 url: '/logout',
+                 method: 'get'
+             })
+         }
+     </script>
+</body>
+</html>
