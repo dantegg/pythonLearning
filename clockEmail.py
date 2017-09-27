@@ -21,8 +21,8 @@ def _format_addr(s):
 # msg['To'] = _format_addr('章儒楠-高级运营组<%s>' % to_addr)
 # msg['Subject'] = Header('【beta】2017.9.5Interception', 'utf-8').encode()
 
-fromAddress = '635366043@qq.com'
-passWord = 'zhang2jingchu02'
+fromAddress = ''
+passWord = ''
 toAddress = 'han.zhang03@ele.me'
 smtpServer = 'smtp.qq.com'
 
