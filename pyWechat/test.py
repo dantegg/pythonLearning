@@ -15,7 +15,7 @@ def clockFunc():
     morningTime = 3600 * 3 - 900
     time.sleep(morningTime)
     print('haha')
-    itchat.send("么么哒~~~", toUserName=userName)
+    itchat.send("哈哈哈，我又来啦~~~，起床啦起床啦！", toUserName=userName)
     print(account)
     #_time = 1 * 30
     #schedule.enter(_time, 0, sendOneWechatMessage)
@@ -29,30 +29,42 @@ def text_reply(msg):
             global count
             print('yes', count)
             if count == 0:
-                return u'嘻嘻嘻，亲爱的（请用文字回复我哟~~~）'
+                count = count + 1
+                return u'嘻嘻嘻，亲爱的，早上好哟！'
             if count == 1:
-                return u'早上好呀，（这是一个小游戏呢）'
+                count = count + 1
+                return u'希望这次不要失败了'
             if count == 2:
-                return u'是不是surprise？'
+                count = count + 1
+                return u'是不是surprise？（←—___←——— ||| 看来失败了）'
             if count == 3:
-                return u'略略略，我才没有起床呢！！！'
+                count = count + 1
+                return u'就是想大洋彼岸的你早晨醒来时能看到我的问好'
             if count == 4:
-                return u'但是我照样能回你微信呀'
+                count = count + 1
+                return u'这样看其实我也成功啦！！！撒花！！！'
             if count == 5:
-                return u'好了，估计你应该看穿了，这是自动回复'
+                count = count + 1
+                return u'好啦，好啦，今天我也要放假了呢！就看你玩的那么爽！！！'
             if count == 6:
-                return u'因为我还在睡觉啦，不能及时回你微信，所以就写了个小玩意'
+                count = count + 1
+                return u'但是要多发图知不知道！小猫小狗小花小草草泥马都可以，当然最终要的是有小仙女（单压X1）'
             if count == 7:
+                count = count + 1
                 return u'楠楠爱你哟， 玩的开心~~~'
             if count >7 and count != 10 and count != 11 and count != 12:
+                count = count + 1
                 return u'嘻嘻嘻'
             if count == 10:
+                count = count + 1
                 return u'你好无聊啊，后面都是嘻嘻嘻，别试啦'
             if count == 11:
+                count = count + 1
                 return u'骗你的啦~~~'
             if count == 12:
-                return u'恭喜您已达成成就：无聊之人！'
-            count = count + 1
+                count = count + 1
+                return u'恭喜您已达成成就：无聊の人！'
+            # count = count + 1
         # return u'嘻嘻嘻'
 
 if __name__ == '__main__':
